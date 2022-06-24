@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+header{
+    height: 100vh;
+    /*position: relative;*/
+    background-image:url(https://source.unsplash.com/user/erondu/1600x900);
+    background-size: cover;
+    background-position: fixed top 0;
+    background-color: darkcyan;
+    font-style: normal;
+    font-size:  01rem;  
+    letter-spacing: 2px;    
+}
+.logo{
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+nav{
+    
+    /*float: inline-end;*/
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-self: flex-end; 
+
+}
+nav a{
+
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    list-style: none;
+    padding: 1rem 2.2rem; 
+}
+
+nav a :hover{
+    color: deeppink;
+    background-color: rgba(10, 10, 10, 0.6);
+    transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
+#deal{
+    height: 100vh;
+    padding: 100px;
+}
+
+#deal h1{
+    margin: 40px;
+    padding: 20px;
+    font-size: 34px;
+    text-align: center;
+    
+    
+}
+.btn-popup{
+    display: block;
+    padding:6px 10px;
+    margin: 30px auto;
+    color: white;
+    background: crimson;
+    border: 2px solid green;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.popup-wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.popup{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px 20px;
+    background: white;
+    position: relative;
+}
+.popup  h1, h2 {
+    padding: 10px;
+}
+.popup a{
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+.popup-close{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+.timer{
+    text-align: center;
+    font-size: 34px;
+    padding-bottom: 30px;
+}
+.timer p{
+    font-size: 30px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.clock{
+    font-size: 3em;
+    text-align:center;
+    color: darkcyan;
+    margin-bottom: 100px;
+    
+}
+.clock span{
+   color:darkcyan;
+    padding: 1px;
+    
+}
+
+
+.portfolio-container{
+    /*background-image: url(img/photo-1589939705384-5185137a7f0f.jpg);*/
+/*background-color: aliceblue;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    padding-top: 15vh;
+}
+.portfolio-container :hover{
+    box-shadow: seagreen;
+    padding: 1rem;
+    background-color: black;
+     transition: ease-in-out 500ms;
+    color: deeppink;
+    border: 10px;
+    cursor: pointer;
+}
+.box{
+    /*background-image: url(img/image\ 6.jpg);*/
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    font-size: 1rem;
+    border: 5px solid #f4f4f4;
+    margin: 1rem;
+    box-shadow: 0 10px 10px rgba(10, 10, 10, 0.6);
+
+}
+.portfolio-container    .box:nth-child(1){
+    background-image: url(img/image\ 6.jpg);
+    }
+
+.portfolio-container    .box:nth-child(2){
+background-image: url(img/image\ 1.jpg);
+}
+.portfolio-container    .box:nth-child(3){
+    background-image: url(img/image\ 2.jpg);
+}
+.portfolio-container     .box:nth-child(4){
+    background-image: url(img/image\ 3.png);
+}
+.portfolio-container    .box:nth-child(5){
+    background-image: url(img/image\ 4.jpg);
+}
+.portfolio-container    .box:nth-child(6){
+    background-image: url(img/image\ 5.jpg);
+}
+
+
+
+
+#Services {
+    height: 100vh;
+}
+#Services h1{
+    text-align: center;
+    padding-top: 150px;
+    margin: 40px;
+    font-size: 40px;
+}
+.Service-1 h3{
+    color: darkcyan;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.grid-3{
+    display: grid;
+    padding-top:40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+/*.Service-1:hover{
+/*box-shadow: seagreen;
+padding: 1rem;
+background-color: blanchedalmond;
+transition: ease-in-out 500ms;
+color: #333333;
+border: 15px;
+cursor: pointer;
+}*/
+
+
+
+
+
+/*#Aboutus h3, #Aboutus p{
+    width: 10%;
+    padding: 0.5rem;
+}*/
+#Aboutus{
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px;
+}
+.Aboutus-container h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 110px;
+    color: darkcyan;
+}
+.about-content p{
+  padding-top: 80px;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 450px;
+  max-width: 500px;
+  
+}
+
+
+
+.contactus-container{
+    /*background-image: url(img/mikita-yo-OLaa2RO2RRo-unsplash.jpg);*/
+    margin: auto;
+    padding: 20vh;
+    height: 100vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: #111111;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    justify-items: center;
+}
+.quick-container{
+padding: 20px;
+display: block;
+list-style: none;
+text-decoration: none;
+margin-right: 50px;
+font-size: 20px;
+margin-bottom: 40px;
+}
+.quick-container li{
+    padding: 10px;
+    color: #000000;
+}
+
+
+.submit{
+    display: block;
+    padding-right: 100px;
+}
+
+.Maps-container{
+    display: grid;
+}
+
+input[type = "Your Name"],
+input[type = "email"],
+input[type = "Enter Your Request"]{
+    height: 2rem;
+    border-radius: 5px;
+    width: 250px;
+    border-spacing: 1rem;
+    display: flex;
+    flex-flow: column;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+    color: rgb(63, 82, 90);
+    border: none;
+}
+#contactus h3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #111111;
+}
+
+::placeholder{
+    padding: 0.5rem;
+    color: #333;
+}
+input[type = "submit"]{
+    height: 2rem;
+    border-radius: 5px;
+    width: 100px;
+    margin: 2 rem;
+    position: relative;
+    left: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+input[type = "submit"]:hover{
+    background-color: #f4f4f4;
+    color: #111111;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #111111;
+}
+.success{
+    outline: 3px solid limegreen;
+ 
+}
+.error{
+    outline: 3px solid crimson;
+    
+}
+.contact-container h3{
+font-size: 3rem;
+padding-bottom: 1rem;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-information label{
+    background-color:black;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: 350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.quicklinks-container{
+    padding: 0.5rem;
+    font-size: x-large;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    length:1vh;
+    text-align: center;
+    background-color: #111;
+    color:goldenrod ;
+    font-size: 1rem;
+
+}
+
+
+
+@media (max-width: 767px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+    nav {
+        font-size: 20px;
+    }
+    
+}
+@media (max-width: 600px){
+    header{
+        position: fixed;
+        top: 0%;
+    }
+    nav{
+       
+       display: block;
+       width: 100%;
+       height: 20vh;
+    }
+    nav ul{
+        margin-right: 50px;
+    }
+    
+    nav ul li{
+       
+        display: flex;
+        font-size: 13px;
+        justify-content: left;
+        align-items: center;
+        
+        
+    }
+    nav ul li a{
+        background: lightcoral;
+    }
+    .clock{
+        text-align: center;
+        font-size: 30px;
+    }
+    .timer p{
+       font-size: 20px;
+    }
+    .Aboutus-container h1{
+        font-size: 20px;
+    }
+    #Aboutus{
+        font-size: 20px;
+        height: 50vh;
+    }
+    
+   .submit h3{
+       font-size: 90px;
+   }
+   #contactus{
+       display: inline;
+   }
+}
